@@ -1,6 +1,9 @@
+import 'package:ecommerce_mobile_app/core/widgets/custome_botton.dart';
 import 'package:ecommerce_mobile_app/core/widgets/custome_textfeald.dart';
+import 'package:ecommerce_mobile_app/core/widgets/text_Botton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -15,15 +18,54 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 18.w),
-          child: const Column(
+          padding: EdgeInsets.symmetric(horizontal: 20.w),
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              SizedBox(
+                height: 20.h,
+              ),
+              const Text(
                 "Welcome\n Back!",
                 style: TextStyle(fontSize: 36, fontWeight: FontWeight.w700),
               ),
-              CustomTextField(hintText: "Username or Email"),
+              SizedBox(
+                height: 36.h,
+              ),
+              CustomTextField(
+                hintText: "Username or Email",
+                prefixIcon: Expanded(
+                  child: SizedBox(
+                    height: 10,
+                    child: SvgPicture.asset(
+                      'assets/svgs/User.svg',
+                      fit: BoxFit.contain,
+                      height: 10,
+                    ),
+                  ),
+                ),
+              ),
+              const CustomTextField(
+                hintText: "password",
+                suffixIcon: Icon(Icons.remove_red_eye_outlined),
+              ),
+              // SizedBox(
+              //   height: 83.h,
+              // ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  CustomeTextBotton(
+                    onpressd: () {},
+                    text: '',
+                    textBotton: 'Forget Password',
+                  ),
+                ],
+              ),
+              CustomeBotton(
+                onpressd: () {},
+                textBotton: "Login",
+              ),
             ],
           ),
         ),

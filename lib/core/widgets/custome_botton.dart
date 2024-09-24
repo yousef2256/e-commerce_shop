@@ -1,4 +1,6 @@
+import 'package:ecommerce_mobile_app/core/theme/style/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomeBotton extends StatelessWidget {
   final String textBotton;
@@ -11,32 +13,20 @@ class CustomeBotton extends StatelessWidget {
     return GestureDetector(
       onTap: onpressd,
       child: Container(
-        width: 350,
-        height: 50,
+        width: double.infinity,
+        height: 55.h,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(7),
-          gradient: const LinearGradient(
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-            colors: [Color(0xff002f8c), Color(0xff0080ba), Color(0xffbd15ad)],
-          ),
+          borderRadius: BorderRadius.circular(10),
+          color: ColorManegar.red,
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                textBotton,
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              const Icon(
-                Icons.arrow_right_alt,
-              ),
-            ],
+        child: Center(
+          child: Text(
+            textBotton,
+            style: const TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+            ),
           ),
         ),
       ),

@@ -30,7 +30,7 @@ class CustomeTextBotton extends StatelessWidget {
             textBotton,
             style: const TextStyle(
               fontSize: 13,
-              color: Colors.white,
+              color: Colors.red,
             ),
           ),
         ),

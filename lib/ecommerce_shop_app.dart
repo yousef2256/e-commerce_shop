@@ -22,7 +22,7 @@ class EcommerceShopApp extends StatelessWidget {
         title: 'Ecommerce shop app',
         theme: lightetheme,
         darkTheme: darcktheme,
-        initialRoute: Routs.OnbordingScreen,
+        initialRoute: Routs.onbordingScreen,
         onGenerateRoute: appRouter.generateRourer,
       ),
     );

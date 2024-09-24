@@ -1,4 +1,4 @@
 class Routs {
-  static const OnbordingScreen = '/OnbordingScreen';
-  static const SignInScreen = '/SignInScreen';
+  static const onbordingScreen = '/OnbordingScreen';
+  static const signInScreen = '/SignInScreen';
 }

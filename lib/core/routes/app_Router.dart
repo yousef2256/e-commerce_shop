@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 class AppRouter {
   Route generateRourer(RouteSettings settings) {
     switch (settings.name) {
-      case Routs.OnbordingScreen:
+      case Routs.onbordingScreen:
         return MaterialPageRoute(
           builder: (_) => const OnboardingScreen(),
         );
-      case Routs.SignInScreen:
+      case Routs.signInScreen:
         return MaterialPageRoute(
           builder: (_) => const SignInScreen(),
         );

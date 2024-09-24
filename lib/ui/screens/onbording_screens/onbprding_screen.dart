@@ -123,7 +123,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   TextButton(
                     onPressed: () {
                       if (currentPage == 2) {
-                        context.pushNamed(Routs.SignInScreen);
+                        context.pushNamed(Routs.signInScreen);
                       } else {
                         controller.nextPage(
                           duration: const Duration(milliseconds: 300),
