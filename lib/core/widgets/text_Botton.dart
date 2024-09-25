@@ -15,6 +15,7 @@ class CustomeTextBotton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           text ?? "",
@@ -31,6 +32,8 @@ class CustomeTextBotton extends StatelessWidget {
             style: const TextStyle(
               fontSize: 13,
               color: Colors.red,
+              decoration: TextDecoration.underline,
+              decorationColor: Colors.red,
             ),
           ),
         ),
