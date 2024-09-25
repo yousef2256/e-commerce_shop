@@ -30,4 +30,4 @@ class SuchalButton extends StatelessWidget {
       ),
     );
   }
-}
+} 

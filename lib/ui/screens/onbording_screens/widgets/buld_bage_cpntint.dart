@@ -28,7 +28,7 @@ class BuldBageCpntint extends StatelessWidget {
             Column(
               children: [
                 //image
-                Container(
+                SizedBox(
                   height: 330.h,
                   width: 350.w,
                   child: SvgPicture.asset(
